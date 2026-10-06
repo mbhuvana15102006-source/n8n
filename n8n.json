@@ -1,0 +1,68 @@
+{
+  "name": "n8n",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "83119119-24be-4457-ad80-86b8ba1fa854",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "sendTo": "guna2007saras@gmail.com",
+        "subject": "hi",
+        "emailType": "text",
+        "message": "how are you",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "76afc116-75ff-4040-988d-d914e493b0e3",
+      "name": "Send a message",
+      "webhookId": "709786db-e165-4985-bbcb-32531107d2ef",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "X2aELvrbrmboLneC",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": true
+  },
+  "versionId": "a9f8e164-677c-4aad-ad0a-1c6891cac67b",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "a6736af69fcb8d2fa94df332f544ed8b97cd96fd61fbf394b7bbf0c6f2605818"
+  },
+  "nodeGroups": [],
+  "id": "Sj3MVwEXUqrQFP1a",
+  "tags": []
+}
